@@ -1,0 +1,43 @@
+@import "../abstracts/variables";
+@import "../abstracts/reset";
+
+
+.p{
+    width: 30%;
+    height: 40vh;
+    margin: 20px 10px;
+    border: 2px solid $secondary-color;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    align-self: center;
+    background-color: $background-dark;
+
+    .pBrowser{
+        height: 20px;
+        background-color: $secondary-color;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        z-index: 2;
+
+        .pCircle{
+            width: 6px;
+            height: 6px;
+            margin: 3px;
+            border-radius: 50%;
+            background-color: white;
+        }
+    }
+
+    a{
+        .pImg{
+            width: 100%;
+            transition: all 10s ease;
+
+            &:hover{
+                transform: translateY(-100%);
+            }
+        }
+    }
+
+}

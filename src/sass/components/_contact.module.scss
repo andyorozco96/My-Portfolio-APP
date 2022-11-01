@@ -1,0 +1,101 @@
+@import "../abstracts/variables";
+@import "../abstracts/reset";
+
+.c {
+  height: 100vh;
+  position: relative;
+  color: #333;
+
+  .cBg {
+    width: 20px;
+    height: 100%;
+    background-color: $primary-color;
+    position: absolute;
+  }
+
+  .wrapper {
+    padding: 50px;
+    display: flex;
+
+
+    .left {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      //justify-content: center;
+      //align-items: center;
+
+      .title {
+        font-size: 3rem;
+        //color: red;
+      }
+
+      .info {
+        .infoItem {
+          //background-color: red;
+          display: flex;
+          align-items: center;
+          margin: 50px 0px;
+          font-weight: 300;
+          width: 70%;
+
+          .icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      //align-items: center;
+      justify-content: center;
+      //background-color: red;
+
+      .cDescription {
+        font-weight: 300;
+        span {
+          font-weight: 600;
+          font-size: 1.25rem;
+          //color: red;
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 3em;
+        input {
+          width: 50%;
+          height: 50px;
+          border: none;
+          border-bottom: 1px solid black;
+        }
+
+        textarea {
+          width: 50%;
+
+          &::placeholder {
+            padding: 0.5rem;
+          }
+        }
+
+        button {
+          width: min-content;
+          padding: 1em 1.5em;
+          border: none;
+          background-color: $primary-color;
+          font-weight: 500;
+          border-radius: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
