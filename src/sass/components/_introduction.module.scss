@@ -181,6 +181,11 @@
           font-size: 3rem;
           line-height: 3rem;
           margin-bottom: .25em;
+
+          @media screen and (max-height: 650px){
+            font-size: 2rem;
+            line-height: 2rem;
+          }
         }
         .introHello{
           margin-top: 1.5em;

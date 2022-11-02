@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../context";
 
 import Me from "../img/Me copy@3x.png";
 import style from "../sass/components/_introduction.module.scss";
 
 function Introduction() {
+  const theme = useContext(ThemeContext)
+
+  const {state} = theme
+
+
   return (
     <div className={style.main}>
       <div className={style.introLeft}>
@@ -97,7 +103,7 @@ function Introduction() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class={`uil uil-github ${style.navIcon}`}></i>
+                <i class={`uil uil-github ${style.navIcon}`} style={{color: state.darkMode ? 'white' : '#333'}}></i>
               </a>
             </div>
             <div className={style.infoItem}>
@@ -106,7 +112,7 @@ function Introduction() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class={`uil uil-linkedin ${style.navIcon}`}></i>
+                <i class={`uil uil-linkedin ${style.navIcon}`} style={{color: state.darkMode ? 'white' : '#333'}}></i>
               </a>
             </div>
 
@@ -116,7 +122,7 @@ function Introduction() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class={`uil uil-twitter ${style.navIcon}`}></i>
+                <i class={`uil uil-twitter ${style.navIcon}`} style={{color: state.darkMode ? 'white' : '#333'}}></i>
               </a>
             </div>
           </div>
