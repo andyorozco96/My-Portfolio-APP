@@ -13,7 +13,7 @@ function Product({img, alt, link}) {
             <div className={style.pCircle}></div>
         </div>
         <a  href={link} target="_blank" rel="noreferrer">
-            <img src={img} alt={alt} className={style.pImg} onerror="this.onerror=null; this.src='{Error404}';"/>
+            <img src={img} alt={alt} className={style.pImg} onerror={`${this.onerror=null} ${this.src={Error404}}`}/>
         </a>
     </div>
   )
