@@ -85,3 +85,71 @@
     }
   }
 }
+
+
+@media screen and (max-width: 480px){
+    .mainAbout{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 50px;
+
+        .left{
+            height: 100%;
+            width: 90%;
+
+            .bg{
+    
+                display: none;
+                top: 1em;
+                left: 2em;
+            }
+
+            .card{
+                position: static;
+                height: 25vh;
+            }
+        }
+
+        .right{
+            display: flex;
+            flex-direction: column;
+            //justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 90%;
+
+            .sub{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+            }
+
+            .desc{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 80%;
+            }
+
+            .award{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .awardImg{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: auto;
+                    width: 80%;
+                }
+                
+                .awardTexts{
+                    display: none;
+                }
+            }
+        }
+    }
+}

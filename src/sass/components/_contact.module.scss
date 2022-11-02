@@ -14,16 +14,16 @@
   }
 
   .wrapper {
-    padding: 50px;
+    height: 100%;
+    //padding: 50px;
     display: flex;
-
+    align-items: center;
 
     .left {
       flex: 1;
       display: flex;
       flex-direction: column;
-      //justify-content: center;
-      //align-items: center;
+      margin-left: 15em;
 
       .title {
         font-size: 3rem;
@@ -31,6 +31,7 @@
       }
 
       .info {
+        font-size: 1.2rem;
         .infoItem {
           //background-color: red;
           display: flex;
@@ -73,25 +74,25 @@
         margin-top: 3em;
 
         input {
-          width: 48%;
+          width: 50%;
           height: 50px;
-          padding: 0rem .5rem;
+          padding: 0rem 0.5rem;
           border: none;
           border-bottom: 1px solid #333;
           background-color: rgb(240, 240, 240);
           &::placeholder {
-            padding: 0 .5rem;
+            padding: 0 0.5rem;
           }
         }
 
         textarea {
           width: 50%;
-          border:none;
+          border: none;
           background-color: rgb(240, 240, 240);
-          padding: 0.5rem .5rem;
-          
+          padding: 0.5rem 0.5rem;
+
           &::placeholder {
-            padding: 0.5rem .5rem;
+            padding: 0.5rem 0.5rem;
           }
         }
 
@@ -105,22 +106,110 @@
           cursor: pointer;
         }
 
-        .errors{
+        .errors {
           margin: 0;
           color: red;
           font-size: 0.9rem;
         }
       }
 
-      .successfull{
+      .successfull {
         width: 48%;
         background-color: rgb(62, 138, 62);
         border-radius: 15px;
         color: white;
         font-weight: 300;
-        font-size: .9rem;
+        font-size: 0.9rem;
         margin-top: 2em;
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .c {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .cBg {
+      width: 5px;
+      left: 0;
+    }
+
+    .wrapper {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      .left {
+        width: 100%;
+        margin: 0;
+
+        .title {
+          margin-top: 1em;
+        }
+
+        .info {
+          width: 100%;
+
+          .infoItem {
+            width: 100%;
+            //flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .icon {
+              display: flex;
+              align-items: center;
+              width: 40px;
+              height: 40px;
+              margin-right: 0.5em;
+            }
+          }
+        }
+      }
+
+      .right {
+        .cDescription {
+          font-size: 1.2rem;
+          span {
+            display: flex;
+            flex-direction: column;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-top: 1em;
+            margin-bottom: 0.15em;
+          }
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          input {
+            width: 95%;
+            margin: 0;
+          }
+          textarea {
+            width: 95%;
+            margin: 0;
+          }
+
+          button {
+            align-self: center;
+            //margin-left: 35%;
+            margin-bottom: 6em;
+            width: 95%;
+          }
+        }
       }
     }
   }

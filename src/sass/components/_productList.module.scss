@@ -29,3 +29,38 @@
         align-items: center;
     }
 }
+
+@media screen and (max-width: 480px){
+    .pl{
+        padding: 10px;
+        max-width: 100vw;
+        overflow: hidden;
+        .plTexts{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 90%;
+            
+            .plTitle{
+                margin-top: 2em;
+                font-size: 2rem;
+            }
+
+            .plDesc{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 3rem;
+                width: 90%;
+            }
+        }
+        .list{
+            justify-content: center;
+            gap: 1em;
+        }
+
+
+
+
+    }
+}

@@ -133,3 +133,55 @@
     transform: translateY(-200px);
   }
 }
+
+@media screen and (max-width: 480px) {
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .introLeft{
+      width: 90%;
+      margin-bottom: 4em;
+      .leftWrapper{
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: max-content;
+        width: 100%;
+
+        .titleCont{
+          height: 50px;
+  
+          .titleContWrapper{
+            text-align: center;
+            .titleItem{
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              height: 50px;
+              font-size: 1.5rem;
+              font-weight: 400;
+            }
+          }
+
+        }
+
+        .description{
+          display: none;
+        }
+
+        .iconScroll{
+          bottom: 0em;
+        }
+      }
+
+
+    }
+
+    .introRight{
+      width: 100%;
+    }
+  }
+}
