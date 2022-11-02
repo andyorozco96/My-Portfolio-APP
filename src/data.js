@@ -1,4 +1,6 @@
 export const moviefy = [
+
+  /* PF DE MOVIEFY+ */
   {
     id: 1,
     alt: "Moviefy+ home page",
@@ -22,17 +24,62 @@ export const moviefy = [
     alt: "Moviefy+ subscribe page",
     img: "https://i.ibb.co/944MkPG/Subscribe.png",
     link: "https://youtu.be/poxn0ZRXXxM",
+  }
+];
+
+
+export const countriesAPP = [
+  /* ACÁ EMPIEZA EL PI DE PAISES */
+  {
+    id: 5,
+    alt: "Countries APP | Home",
+    img: "https://i.ibb.co/XxCRBPF/Home.png",
+    link: "https://github.com/andyorozco96/PI-COUNTRIES-OROZCO-ANDRES",
   },
-//   {
-//     id: 5,
-//     alt: "Moviefy+ playlist detail",
-//     img: "https://i.ibb.co/fvw1ZcK/Playlist-Detail.png",
-//     link: "https://youtu.be/poxn0ZRXXxM",
-//   },
-//   {
-//     id: 6,
-//     alt: "Moviefy+ cart page",
-//     img: "https://i.ibb.co/HNjQ6sP/Carrito.png",
-//     link: "https://youtu.be/poxn0ZRXXxM",
-//   },
+  {
+    id: 6,
+    alt: "Countries APP | All countries view",
+    img: "https://i.ibb.co/3YxVL2P/Cards.png",
+    link: "https://github.com/andyorozco96/PI-COUNTRIES-OROZCO-ANDRES",
+  },
+  {
+    id: 7,
+    alt: "Countries APP | New activity creation",
+    img: "https://i.ibb.co/yWWdYyQ/Create-Activity.png",
+    link: "https://github.com/andyorozco96/PI-COUNTRIES-OROZCO-ANDRES",
+  },
+  {
+    id: 8,
+    alt: "Countries APP | Country details",
+    img: "https://i.ibb.co/B6bVBmN/Country-Detail.png",
+    link: "https://github.com/andyorozco96/PI-COUNTRIES-OROZCO-ANDRES",
+  }
+];
+
+export const ruloteca  = [
+  /* ACÁ EMPIEZA EL PI DE PAISES */
+  {
+    id: 9,
+    alt: "Ruloteca | Home",
+    img: "https://i.ibb.co/6y0wB0r/Home.png",
+    link: "https://ruloteca.000webhostapp.com/index.html",
+  },
+  {
+    id: 10,
+    alt: "Ruloteca | Products",
+    img: "https://i.ibb.co/sKFrWx1/Products.png",
+    link: "https://ruloteca.000webhostapp.com/html/products.html",
+  },
+  {
+    id: 11,
+    alt: "Ruloteca | Gallery",
+    img: "https://i.ibb.co/xCGb06Q/Gallery.png",
+    link: "https://ruloteca.000webhostapp.com/html/gallery.html",
+  },
+  {
+    id: 12,
+    alt: "Ruloteca | About Us",
+    img: "https://i.ibb.co/ScRBDxv/About-us.png",
+    link: "https://ruloteca.000webhostapp.com/html/about-us.html",
+  }
 ];

@@ -3,14 +3,21 @@
 
 
 .p{
-    width: 30%;
-    height: 40vh;
+    width: 80%;
+    align-self: center;
+    height: 28vh;
     margin: 20px 10px;
     border: 2px solid $secondary-color;
     border-radius: 10px 10px 0px 0px;
     overflow: hidden;
     align-self: center;
     background-color: $background-dark;
+    transition: transform 1s;
+
+    &:hover{
+        transform: scale(1.1);
+
+    }
 
     .pBrowser{
         height: 20px;
@@ -47,6 +54,6 @@
         flex-direction: column;
         width: 90%;
         margin: 0;
-        height: 25vh;
+        height: 20vh;
     }
 }

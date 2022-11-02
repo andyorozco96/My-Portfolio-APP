@@ -1,5 +1,5 @@
 import React from "react";
-import { moviefy } from "../data";
+import { moviefy, countriesAPP, ruloteca } from "../data";
 import style from "../sass/components/_productList.module.scss";
 import Product from "./Product";
 
@@ -17,9 +17,39 @@ function ProductList() {
         </p>
       </div>
 
+      <h5 className={style.listTitle}>Moviefy+</h5>
       <div className={style.list}>
         {moviefy.map((item) => (
-          <Product key={item.id} img={item.img} alt={item.alt} link={item.link}/>
+          <Product
+            key={item.id}
+            img={item.img}
+            alt={item.alt}
+            link={item.link}
+          />
+        ))}
+      </div>
+
+      <h5 className={style.listTitle}>Ruloteca</h5>
+      <div className={style.list}>
+        {ruloteca.map((item) => (
+          <Product
+            key={item.id}
+            img={item.img}
+            alt={item.alt}
+            link={item.link}
+          />
+        ))}
+      </div>
+
+      <h5 className={style.listTitle}>The Countries APP</h5>
+      <div className={style.list}>
+        {countriesAPP.map((item) => (
+          <Product
+            key={item.id}
+            img={item.img}
+            alt={item.alt}
+            link={item.link}
+          />
         ))}
       </div>
     </div>

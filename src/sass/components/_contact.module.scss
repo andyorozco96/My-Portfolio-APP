@@ -5,8 +5,13 @@
   height: 100vh;
   position: relative;
   color: #333;
+  display: flex;
+  justify-content: center;
+ 
 
   .cBg {
+    position: absolute;
+    left: 0;
     width: 20px;
     height: 100%;
     background-color: $primary-color;
@@ -14,16 +19,19 @@
   }
 
   .wrapper {
+    border-top: 1px solid #666 ;
+    width: 70vw;
     height: 100%;
     //padding: 50px;
     display: flex;
+    gap: 10em;
     align-items: center;
 
     .left {
       flex: 1;
       display: flex;
       flex-direction: column;
-      margin-left: 15em;
+      //margin-left: 15em;
 
       .title {
         font-size: 3rem;
@@ -74,7 +82,7 @@
         margin-top: 3em;
 
         input {
-          width: 50%;
+          width: 100%;
           height: 50px;
           padding: 0rem 0.5rem;
           border: none;
@@ -86,7 +94,7 @@
         }
 
         textarea {
-          width: 50%;
+          width: 100%;
           border: none;
           background-color: rgb(240, 240, 240);
           padding: 0.5rem 0.5rem;
@@ -137,12 +145,12 @@
     text-align: center;
 
     .cBg {
-      width: 5px;
+      width: 8px;
       left: 0;
     }
 
     .wrapper {
-      width: 90%;
+      width: 80%;
       display: flex;
       flex-direction: column;
       justify-content: center;
