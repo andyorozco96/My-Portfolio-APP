@@ -92,6 +92,7 @@
         flex-direction: column;
         text-align: center;
         margin-top: 50px;
+        height: auto;
 
         .left{
             height: 100%;
@@ -117,7 +118,10 @@
             align-items: center;
             text-align: center;
             width: 90%;
-
+            height: max-content;
+            h1{
+                margin-top: 1em;
+            }
             .sub{
                 display: flex;
                 flex-direction: column;

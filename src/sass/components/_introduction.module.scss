@@ -157,24 +157,35 @@
 
 @media screen and (max-width: 480px) {
   .main {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 
     .introLeft{
       width: 90%;
-      margin-bottom: 4em;
+      margin-bottom: 1em;
+      height: 50%;
+
       .leftWrapper{
-        //margin-top: 2em;
-        padding: 10px;
+        margin-top: 2em;
+        //padding: 10px;
         align-items: center;
         justify-content: center;
         text-align: center;
         height: 100%;
         width: 100%;
 
+        .introName{
+          font-size: 3rem;
+          line-height: 3rem;
+          margin-bottom: .25em;
+        }
         .introHello{
           margin-top: 1.5em;
+          margin-bottom: .5em;
+          font-size: 1.5rem;
         }
 
         .titleCont{
@@ -187,7 +198,7 @@
               flex-direction: column;
               justify-content: center;
               height: 50px;
-              font-size: 1.5rem;
+              font-size: 1.3rem;
               font-weight: 400;
             }
           }
@@ -199,12 +210,12 @@
         }
 
         .iconScroll{
-          bottom: 0em;
+          display: none;
         }
 
         .btnContainer{
           margin-top: 1.5em;
-          margin-bottom: 5em;
+          margin-bottom: 1.5em;
           //margin-left: .5em;
           display: flex;
           gap: .5em;
@@ -232,6 +243,23 @@
 
     .introRight{
       width: 100%;
+      height: 50%;
+      //background-color: aqua;
+      position: relative;
+
+      .imgBg{
+        height: 100%;
+        position: static;
+      }
+
+      .rightImg{
+        position: absolute;
+        top: 0;
+      }
+
+
+
+      
     }
   }
 }
