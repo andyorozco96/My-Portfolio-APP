@@ -1,6 +1,7 @@
 import React from "react";
 
 import style from "../sass/components/_product.module.scss";
+import Error404 from "../img/Error404.png"
 
 
 function Product({img, alt, link}) {
@@ -12,7 +13,7 @@ function Product({img, alt, link}) {
             <div className={style.pCircle}></div>
         </div>
         <a  href={link} target="_blank" rel="noreferrer">
-            <img src={img} alt={alt} className={style.pImg}/>
+            <img src={img ? img : Error404} alt={alt} className={style.pImg}/>
         </a>
     </div>
   )
