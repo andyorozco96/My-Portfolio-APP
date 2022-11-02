@@ -1,0 +1,16 @@
+.dark {
+  background-color: #222;
+  color: white;
+
+  h1,h2,h3,h4,span,p{
+    color: white ;
+  }
+
+  div{
+    color: white !important;
+  }
+
+  svg{
+    stroke: white !important;
+  }
+}

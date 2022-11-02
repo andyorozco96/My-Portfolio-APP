@@ -1,12 +1,45 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import style from "../sass/components/_contact.module.scss";
 import Phone from "../img/phone.png";
 import Location from "../img/address.png";
 import Email from "../img/email.png";
 import emailjs from "@emailjs/browser";
+import { useFormik } from 'formik';
+import validate from './Validate'
+import Swal from "sweetalert2/dist/sweetalert2.all.min.js"
+
+
 
 function Contact() {
   const form = useRef();
+
+  const [values, setValues] = useState({
+    name: '',
+    email: '',
+    message:'',
+  })
+
+  const [errors, setErrors] = useState({
+  name: '',
+  email: '',
+  message:''
+})
+
+const [done, setDone] = useState(false)
+
+  const handleChange = (e) =>{
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value
+    })
+
+    setErrors(validate(values))
+  }
+
+  // useEffect(()=>{
+  //   console.log(values)
+  //   console.log(errors)
+  // },[values])
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,6 +50,29 @@ function Contact() {
       }, (error) => {
           console.log(error.text);
       });
+
+      Swal.fire({
+        text: "Message send successfully",
+        icon: "success",
+        iconColor: "rgb(62, 138, 62)",
+        showCloseButton: true,
+        confirmButtonText: "Continue",
+        allowEnterKey: false,
+        customClass: {
+          popup: "Alert",
+          closeButton: "closeButton",
+          confirmButton: "confirmButton",
+        },
+      }).then((result) => {
+      if (result.isConfirmed) {
+        setValues({
+          name: '',
+          email: '',
+          message:'',
+        })
+      }
+    });
+   
   };
 
   return (
@@ -47,14 +103,17 @@ function Contact() {
             Get in touch. Always available if the right project comes along me.
           </p>
             <form ref={form} onSubmit={sendEmail}>
-              <label>Name</label>
-              <input type="text" name="user_name" />
-              <label>Email</label>
-              <input type="email" name="user_email" />
-              <label>Message</label>
-              <textarea name="message" />
-              <button type="submit">Submit</button>
+              <input onChange={(e) => handleChange(e)} placeholder='Name' type="text" name="name" value={values.name}/>
+              { errors.name && <span className={style.errors}>* {errors.name}</span> }
+              <input onChange={(e) => handleChange(e)} placeholder='Email' type="email" name="email" value={values.email}/>
+              { errors.email && <span className={style.errors}>* {errors.email}</span> }
+              <textarea rows="5" onChange={(e) => handleChange(e)} placeholder='Please type a message'  name="message" value={values.message} />
+              { errors.message && <span className={style.errors}>* {errors.message}</span> }
+              <button type="submit" disabled={Object.keys(errors).length <= 0 ? false : true }>Submit</button>
             </form>
+            {
+              done && <span className={style.successfull}>Thank you! Your message has been sent successfully, <br/> I will contact you as soon as possible.</span>
+            }
         </div>
       </div>
     </div>
