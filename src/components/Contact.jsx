@@ -1,10 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import style from "../sass/components/_contact.module.scss";
 import Phone from "../img/phone.png";
 import Location from "../img/address.png";
 import Email from "../img/email.png";
 import emailjs from "@emailjs/browser";
-import { useFormik } from 'formik';
 import validate from './Validate'
 import Swal from "sweetalert2/dist/sweetalert2.all.min.js"
 
@@ -24,8 +23,6 @@ function Contact() {
   email: '',
   message:''
 })
-
-const [done, setDone] = useState(false)
 
   const handleChange = (e) =>{
     setValues({
@@ -111,9 +108,6 @@ const [done, setDone] = useState(false)
               { errors.message && <span className={style.errors}>* {errors.message}</span> }
               <button type="submit" disabled={Object.keys(errors).length <= 0 ? false : true }>Submit</button>
             </form>
-            {
-              done && <span className={style.successfull}>Thank you! Your message has been sent successfully, <br/> I will contact you as soon as possible.</span>
-            }
         </div>
       </div>
     </div>
