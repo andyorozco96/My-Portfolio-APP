@@ -55,5 +55,29 @@
         width: 90%;
         margin: 0;
         height: 20vh;
+        transition: transform .2s;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+        a{
+            .pImg{
+                width: 100%;
+                transition: all 10s ease;
+    
+                &:hover{
+                    transform: translateY(-100%);
+                }
+
+                &:active{
+                    transform: translateY(-100%);
+                }
+
+                &:hover, &:active{
+                    transform: translateY(-100%);
+                }
+            }
+        }
     }
 }
