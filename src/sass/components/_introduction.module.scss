@@ -18,7 +18,7 @@
       width: 70%;
       //padding: 6rem;
       //padding-left: 5rem;
-      height: 45%;
+      height: 60%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -85,6 +85,27 @@
         bottom: 5rem;
         margin-left: 0.5em;
       }
+
+      .btnContainer{
+        margin-left: .5em;
+        display: flex;
+        gap: .5em;
+
+        .infoItem {
+          a {
+            .navIcon{
+              text-decoration: none;
+              font-size: 1.75rem;
+              color: #333;
+              transition: font-size .2s;
+              
+              &:hover{
+                color: $primary-color;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
@@ -144,12 +165,17 @@
       width: 90%;
       margin-bottom: 4em;
       .leftWrapper{
+        //margin-top: 2em;
         padding: 10px;
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: max-content;
+        height: 100%;
         width: 100%;
+
+        .introHello{
+          margin-top: 1.5em;
+        }
 
         .titleCont{
           height: 50px;
@@ -175,6 +201,30 @@
         .iconScroll{
           bottom: 0em;
         }
+
+        .btnContainer{
+          margin-top: 1.5em;
+          margin-bottom: 5em;
+          //margin-left: .5em;
+          display: flex;
+          gap: .5em;
+  
+          .infoItem {
+            a {
+              .navIcon{
+                text-decoration: none;
+                font-size: 1.75rem;
+                color: #333;
+                transition: font-size .2s;
+                
+                &:hover{
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+
       }
 
 
