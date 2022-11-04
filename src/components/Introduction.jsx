@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../context";
 
-import Me from "../img/Me copy@3x.png";
+import Me from "../img/Portfolio1.png";
 import style from "../sass/components/_introduction.module.scss";
 
 function Introduction() {
