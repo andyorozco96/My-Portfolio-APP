@@ -70,4 +70,53 @@
 }
 
 @media screen and (max-width: 480px) {
+  .s {
+    width: 100vw;
+    padding: 0px;
+    overflow: hidden;
+
+    .sTexts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
+
+      .sTitle {
+        font-size: 2rem;
+      }
+    }
+
+    .sBackground {
+      .sContainer {
+        max-width: 90%;
+        margin-bottom: 2rem;
+        gap: 0.5em;
+
+        .sItem {
+          width: 80px;
+          height: min-content;
+          margin: 0.2rem 0;
+
+          i {
+            font-size: 3rem;
+          }
+
+          .sName {
+            margin: 0;
+            margin-top: 5px;
+          }
+
+          .sItem:hover {
+            transform: scale(1.2);
+            text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.185);
+          }
+
+          .sItem:active {
+            transform: scale(1.2);
+            text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.185);
+          }
+        }
+      }
+    }
+  }
 }
