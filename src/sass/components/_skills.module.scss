@@ -13,11 +13,59 @@
 
     .sTitle {
       font-size: 3rem;
+      margin-bottom: 2rem;
     }
   }
 
   .sBackground {
-    background-color: #333;
+    display: flex;
+    justify-content: center;
+
+    .sContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 70%;
+      gap: 1em;
+
+      .sItem {
+        //background-color: #333;
+        //border-radius: 35%;
+        //border: 1.8px solid #333;
+        width: 120px;
+        height: 120px;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        transition: transform 0.2s;
+
+        i {
+          font-size: 5rem;
+          margin-top: 20px;
+        }
+
+        .sName {
+          margin: 30px 20px;
+          font-size: 1rem;
+          color: #333;
+        }
+
+        .sNameDark {
+          margin: 30px 20px;
+          font-size: 1rem;
+          color: $text-color-white;
+        }
+      }
+
+      .sItem:hover {
+        transform: scale(1.2);
+        text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.185);
+      }
+    }
   }
 }
 
