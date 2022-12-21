@@ -2,107 +2,103 @@
 @import "../abstracts/reset";
 
 .pl {
-    color:#333;
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: column;
+  color: #333;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .plTexts {
+    width: 65%;
+
+    .plTitle {
+      font-size: 3rem;
+    }
+
+    .plDesc {
+      margin: 20px 0px;
+      margin-bottom: 80px;
+    }
+  }
+  .listTitle {
+    width: 70vw;
+    background-color: $primary-color;
+    padding: 0.5rem 0rem;
+    border-radius: 50px;
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  .list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-rows: 1fr 1fr;
+    flex-wrap: wrap;
+    justify-items: center;
     align-items: center;
-    text-align: center;;
 
-    .plTexts{
-        width: 65%;
-
-        .plTitle{
-            font-size: 3rem;
-        }
-
-        .plDesc{
-            margin: 20px 0px;
-            margin-bottom: 80px;
-        }
+    :nth-child(1) {
+      grid-column: 1/2;
+      grid-row: 1/2;
     }
-    .listTitle{
-        width: 70vw;
-        background-color: $primary-color;
-        padding: .5rem 0rem;
-        border-radius: 50px;
-        font-size: 2.5rem;
-        font-weight: 300;
-        margin-top: 4rem;
-        margin-bottom: 3rem;
+    :nth-child(2) {
+      grid-column: 2/3;
+      grid-row: 1/2;
     }
-    .list{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-rows: 1fr 1fr;
-        flex-wrap: wrap;
-        justify-items: center;
-        align-items: center;
-
-        :nth-child(1){
-            grid-column: 1/2;
-            grid-row: 1/2;
-        }
-        :nth-child(2){
-            grid-column: 2/3;
-            grid-row: 1/2;
-        }
-        :nth-child(3){
-            grid-column: 3/4;
-            grid-row: 1/2;
-        }
-        :nth-child(4){
-            grid-column: 2/3;
-            grid-row: 2/2;
-        }
+    :nth-child(3) {
+      grid-column: 3/4;
+      grid-row: 1/2;
     }
+    :nth-child(4) {
+      grid-column: 2/3;
+      grid-row: 2/2;
+    }
+  }
 }
 
-@media screen and (max-width: 480px){
-    .pl{
-        padding: 10px;
-        max-width: 100vw;
-        overflow: hidden;
-        .plTexts{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 90%;
-            
-            .plTitle{
-                margin-top: 2em;
-                font-size: 2rem;
-            }
+@media screen and (max-width: 480px) {
+  .pl {
+    padding: 10px;
+    max-width: 100vw;
+    overflow: hidden;
+    .plTexts {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 90%;
 
-            .plDesc{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-bottom: 3rem;
-                width: 90%;
-            }
-        }
+      .plTitle {
+        margin-top: 2em;
+        font-size: 2rem;
+      }
 
-        .listTitle{
-            width: 80vw;
-            background-color: $primary-color;
-            padding: .5rem 0rem;
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-top: 0rem;
-        }
-
-        .list{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 1em;
-            margin-bottom: 5em;
-        }
-
-
-
-
+      .plDesc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 3rem;
+        width: 90%;
+      }
     }
+
+    .listTitle {
+      width: 80vw;
+      background-color: $primary-color;
+      padding: 0.5rem 0rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-top: 0rem;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1em;
+      margin-bottom: 5em;
+    }
+  }
 }
