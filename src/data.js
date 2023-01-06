@@ -87,37 +87,37 @@ export const deliveroo = [
   {
     id: 13,
     alt: "Deliveroo | Home screen",
-    img: "https://i.ibb.co/ZcvkKG4/Deliveroo-home-screen.png",
+    img: "https://i.ibb.co/MGWdfSR/Deliveroo-home-screen.png",
     link: "https://github.com/andyorozco96/deliveroo-clone",
   },
   {
     id: 14,
     alt: "Deliveroo | Restaurante example screen",
-    img: "https://i.ibb.co/9t3mbZp/Deliveroo-Restaurant-screen.png",
+    img: "https://i.ibb.co/BfBXwBr/Deliveroo-Restaurant-screen.png",
     link: "https://github.com/andyorozco96/deliveroo-clone",
   },
   {
     id: 15,
     alt: "Deliveroo | Menu with handlers screen",
-    img: "https://i.ibb.co/VwdYNgk/Deliveroo-menu-basket-screen.png",
+    img: "https://i.ibb.co/Jsf88Pn/Deliveroo-menu-basket-screen.png",
     link: "https://github.com/andyorozco96/deliveroo-clone",
   },
   {
     id: 17,
     alt: "Deliveroo | Placing order screen",
-    img: "https://i.ibb.co/dMdKNP5/Deliveroo-order-screen.png",
+    img: "https://i.ibb.co/GW9dXcb/Deliveroo-order-screen.png",
     link: "https://github.com/andyorozco96/deliveroo-clone",
   },
   {
     id: 16,
     alt: "Deliveroo | Basket before place order screen",
-    img: "https://i.ibb.co/74T8bpJ/Deliveroo-basket-screen.png",
+    img: "https://i.ibb.co/ftyZ7Ng/Deliveroo-basket-screen.png",
     link: "https://github.com/andyorozco96/deliveroo-clone",
   },
   {
     id: 18,
     alt: "Deliveroo | Waiting for delivery to come screen",
-    img: "https://i.ibb.co/1n6YDGp/Deliveroo-delivery-wait-screen.png",
+    img: "https://i.ibb.co/j4mXXxx/Deliveroo-delivery-wait-screen.png",
     link: "https://github.com/andyorozco96/deliveroo-clone",
   },
 ];
