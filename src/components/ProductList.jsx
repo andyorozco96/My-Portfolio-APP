@@ -1,6 +1,7 @@
 import React from "react";
-import { moviefy, countriesAPP, ruloteca } from "../data";
+import { moviefy, countriesAPP, ruloteca, deliveroo } from "../data";
 import style from "../sass/components/_productList.module.scss";
+import PhoneMockup from "./PhoneMockup";
 import Product from "./Product";
 
 function ProductList() {
@@ -15,6 +16,20 @@ function ProductList() {
           look very good here. <br />
           In the meantime, here is some of the work I have done...
         </p>
+      </div>
+      <h5 className={style.listTitle}>Deliveroo Clone App - Mobile -</h5>
+
+      <div className={style.phone}>
+        {deliveroo.map((item) => (
+          <div className={style.phoneDiv}>
+            <PhoneMockup
+              key={item.id}
+              img={item.img}
+              alt={item.alt}
+              link={item.link}
+            />
+          </div>
+        ))}
       </div>
 
       <h5 className={style.listTitle}>Moviefy+</h5>
