@@ -17,7 +17,7 @@ function ProductList() {
           In the meantime, here is some of the work I have done...
         </p>
       </div>
-      <h5 className={style.listTitle}>Deliveroo Clone App - Mobile -</h5>
+      <h5 className={style.listTitle}>Deliveroo Clone Mobile App</h5>
 
       <div className={style.phone}>
         {deliveroo.map((item) => (
